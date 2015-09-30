@@ -1,0 +1,7 @@
+<ul> 
+  <% @zones.each do |zone| %> 
+    <h3><%= zone.name %><%=link_to "Show more", zone_path(zone.id)%></h3> 
+  <% end %> 
+</ul> 
+<h5><%=link_to("Martial Art Schools",gims_path)%><h5>
+		

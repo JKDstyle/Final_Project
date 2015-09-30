@@ -1,0 +1,11 @@
+<ul> 
+  <% @gims.each do |gim| %> 
+    <h3><%= gim.name %> <%=link_to "Show me more about the gym", gim_path(gim.id)%></h3> 
+    <li><%= gim.description %> </li> 
+    <li><%= gim.address %> <%=link_to "Show me more about the barrio", zone_path(gim.id)%></li> 
+  <% end %> 
+</ul> 
+
+
+<h5><%=link_to "Back to menu", root_path%><h5>
+<h5><%=link_to("Zones to practise",zones_path)%><h5>

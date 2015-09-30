@@ -1,0 +1,6 @@
+<h3><%= @zone.name %></h3> 
+<% @zone.gims.each do |gim| %>
+	<h5> <%= gim.name %>  </h5> 
+<% end %> 
+<h5><%=link_to("Martial Art Schools",gims_path)%><h5>
+		
