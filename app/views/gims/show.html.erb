@@ -4,13 +4,14 @@
 			<h1><%= @gim.name %></h1> 
 			<p><%= @gim.description %></p> 
 			<p><%= @gim.address %></p> 
+			
 
 			<h3><%= @gim.name %></h3> 
 			<% @gim.martial_arts.each do |martial| %>
 				<%= martial.name %>
 			<% end %> 
-			<h5><%=link_to("Martial Art Schools", gims_path, :class => 'trigger_map')%><h5>
-			<h5><%=link_to("Zones to practise",zones_path, :class => 'trigger_map')%><h5>
+			<h5><%=link_to("Martial Art Schools", gims_path%><h5>
+			<h5><%=link_to("Zones to practise",zones_path%><h5>
 		</div>
 		<div class="col-lg-6">
 			<div id="map">

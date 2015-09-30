@@ -17,7 +17,8 @@ $(document).on("ready", function() {
 		console.log(position.coords.latitude)
 		console.log(position.coords.longitude)
 	}
-		function onError() {
+		
+	function onError() {
 		console.log(error)
 	}
 
