@@ -10,8 +10,8 @@ MartialArt.destroy_all
 Zone.destroy_all
 
 gims = [
-	Gim.create(name: "Loong", description: "the way of the intercepting fist", address: "Via Julia, Sabadell"),
-	Gim.create(name: 'Campió', description: 'Improve you skills in personal defense', address: 'Carrer Leonardo Da Vinci, Sabadell')
+	Gim.create(name: "Loong", description: "the way of the intercepting fist", longitude: "41.555488", lattitude: "2.095242", address: "Via Julia, Sabadell"),
+	Gim.create(name: 'Campió', description: 'Improve you skills in personal defense',longitude: "41.5232701", lattitude: "2.1115711", address: 'Carrer Leonardo Da Vinci, Sabadell')
 ]
 
 martial_arts = [
@@ -28,6 +28,7 @@ zones = [
 gimzones = [ 
 GimZone.create(gim_id: Gim.first.id, zone_id: Zone.first.id),
 GimZone.create(gim_id: Gim.last.id, zone_id: Zone.last.id)
+
 ]
 
 gimmartialarts = [

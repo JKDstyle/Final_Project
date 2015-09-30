@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150930080237) do
+ActiveRecord::Schema.define(version: 20150930111336) do
 
   create_table "gim_martial_arts", force: :cascade do |t|
     t.datetime "created_at",     null: false
@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 20150930080237) do
     t.string   "name"
     t.text     "description"
     t.text     "address"
-    t.integer  "longitude"
-    t.integer  "lattitude"
+    t.string   "longitude"
+    t.string   "lattitude"
   end
 
   create_table "martial_arts", force: :cascade do |t|
