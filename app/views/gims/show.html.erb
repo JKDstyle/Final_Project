@@ -1,27 +1,50 @@
-<div class="container">
-	<div class="row">
-		<div class="col-lg-6">
-			<h1><%= @gim.name %></h1> 
-			<p><%= @gim.description %></p> 
-			<p><%= @gim.address %></p> 
-			<p hidden="true" class='lat'><%= @gim.lattitude %></p> 
-			<p hidden="true" class='lon'><%= @gim.longitude %></p> 
+<div class='background-image'>	
+	<div class="container">
+		<div class='row'>
+			<center>
+				<button class="btn btn-primary trigger-map">Show me the map</button>
 
-
-			<h3><%= @gim.name %></h3> 
-			<% @gim.martial_arts.each do |martial| %>
-				<%= martial.name %>
-			<% end %> 
-			<h5><%=link_to "Martial Art Schools", gims_path %><h5>
-			<h5><%=link_to "Zones to practise",zones_path %><h5>
-			<h5><%=link_to "Back to menu", root_path%><h5>
+				<div id="map"></div>
+			</center>
 		</div>
-		<div class="col-lg-6">
-			<button class="btn btn-primary trigger-map">Show me the map</button>
+		<div class="row">
+			<div class="col-lg-6">
+				<h1><%= @gim.name %></h1> 
+				<p><%= @gim.description %></p> 
+				Direction: <p><%= @gim.address %></p> 
+				<p hidden="true" class='lat'><%= @gim.lattitude %></p> 
+				<p hidden="true" class='lon'><%= @gim.longitude %></p> 
 
-			<div id="map"></div>
+
+				<p><h3>Martial arts you can practise</h3></p>
+				<% @gim.martial_arts.each do |martial| %>
+					<li><%= martial.name %></li>
+				<% end %> 
+			</div>
+			<div class='col-lg-6 '>
+			</div>
 		</div>
-		<h5><%=link_to "Martial Arts",martial_arts_path %><h5>
+		<div class='row'>
+			<div class="col-sm-3 paragraph">
+				<img class='dojo'src="../photos/dojo.jpg" alt="bla">
+				<h5><%=link_to("Martial Art Schools",gims_path)%><h5>
+				
+			</div>
+			<div class="col-sm-3 paragraph">
+				<img class='martial' src="../photos/martial_arts.jpg" alt="bla">
+	 			<h5><%=link_to("Martial Arts",martial_arts_path)%><h5>
+			</div>
+			
+			<div class="col-sm-3 paragraph">
+				<img class='zone' src="../photos/sbd.jpg" alt="bla">
+				<h5><%=link_to("Zones to practise",zones_path)%><h5>
+
+			</div>
+
+			<div class="col-sm-3 paragraph">
+				<img class='zone' src="../photos/menu.jpg" alt="bla">
+				<h5><%=link_to "Back to menu", root_path%><h5>
+			</div>
+		</div>
 	</div>
 </div>
-

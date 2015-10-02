@@ -6,6 +6,8 @@ class GimsController < ApplicationController
 
 	def index
 		@gims = Gim.order(created_at: :desc)
+		
+
 	end
 
 	def show

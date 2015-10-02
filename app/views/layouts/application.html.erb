@@ -7,14 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class='container-footer'>
+		
 
-<%= yield %>
+			<%= yield %>
 
-<%= render 'helpers/footer' %>
-
-
+			<%= render 'helpers/footer' %>
 
 
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
+			<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	</div>
 </body>
 </html>
