@@ -10,6 +10,7 @@ class MartialArtsController < ApplicationController
 	def show
 		@martial_art = MartialArt.find params[:id]
 		
+		
 	end
 
 	
