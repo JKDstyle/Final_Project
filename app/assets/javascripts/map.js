@@ -40,7 +40,7 @@ function onError() {
 			var users_location = position.coords.longitude+','+position.coords.latitude
 			var gim_marker = 'pin-l-park+482(' + gims_location + ')';
 			var user_marker = 'pin-l-star+482('+ users_location +')';
-			var zoom = '15'
+			var zoom = '14'
 			var format = 'jpg90'
 			var width = '640'
 			var height = '640';

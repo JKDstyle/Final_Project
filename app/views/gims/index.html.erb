@@ -2,53 +2,27 @@
 	<div class="row">
 		  <% @gims.each do |gim| %> 
 			<table class="table">
- 				<tr>
-					<div class="col-sm-3 paragraph" >
-				    	<td><h3><%= gim.name %></h3></td>
-		            </div>
-		            <div class="col-sm-3 paragraph" >
-					    <td><p><%= gim.description %></p></td> 
-					</div>
-					<div class="col-sm-3 paragraph" >
-					    <td><%=button_to "Show me more about the gym", gim_path(gim.id), method: 'get'%></td>
-					</div>
+		 				<tr>
+							<div class="col-sm-3 paragraph" >
+						    	<td><h3><%= gim.name %></h3></td>
+				            </div>
+				            <div class="col-sm-3 paragraph" >
+							    <td><p><%= gim.description %></p></td> 
+							</div>
+							<div class="col-sm-3 paragraph" >
+							    <td><%=button_to "Show me more about the gym", gim_path(gim.id), method: 'get'%></td>
+							</div>
 
 
-					<div class="col-sm-3 paragraph" >
-					    <td><%=link_to "Show me more about the barrio", zone_path(gim.id)%></td>
-					</div>
-
-				</tr>
-		    <!-- <h3><%= gim.name %> <%=link_to "Show me more about the gym", gim_path(gim.id)%></h3> 
-		    <li><%= gim.description %> </li> 
-		    <li><%= gim.address %> <%=link_to "Show me more about the barrio", zone_path(gim.id)%></li> 
-		  --> <% end %> 
-				    
-			</table>
+							<div class="col-sm-3 paragraph" >
+							    <td><%=link_to "Zones to practise", zone_path(gim.zones.first.id)%></td>
+							</div>
+						</tr>
+		  		<% end %> 
+			</table>	   
+		        
 	</div>
 </div>		  
  
-<div class='background-button'>	
-	<div class="container">
-			<div class="row text">
-				<div class="col-sm-4 paragraph">
-					<img class='dojo'src="photos/menu.jpg" alt="bla">
-					<h5><%=link_to "Back to menu", root_path%><h5>
-					
-				</div>
-				<div class="col-sm-4 paragraph">
-					<img class='martial' src="photos/martial_arts.jpg" alt="bla">
-	     			<h5><%=link_to("Martial Arts",martial_arts_path)%><h5>
-				</div>
-				
-				<div class="col-sm-4 paragraph">
-					<img class='zone' src="photos/sbd.jpg" alt="bla">
-					<h5><%=link_to("Zones to practise",zones_path)%><h5>
-
-				</div>
-			</div>
-	</div>
-</div>
-
 
 
