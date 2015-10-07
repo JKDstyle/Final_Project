@@ -1,8 +1,11 @@
-<ul> 
-  <% @martial_arts.each do |art| %> 
-    <h3><%= art.name %><%=link_to "Show more", martial_art_path(art.id)%></h3> 
-    <li><%= art.description %></li> 
-    
-  <% end %> 
-</ul> 
 
+<div class='container'>
+	
+	<ul> 
+	  <% @martial_arts.each do |art| %> 
+	    <h3><%= art.name %><%=link_to "Show more", martial_art_path(art.id)%></h3> 
+	    <li><%= art.description %></li> 
+	    
+	  <% end %> 
+	</ul> 
+</div>

@@ -1,4 +1,8 @@
-<h3><%= @martial_art.name %></h3> 
-<% @martial_art.zones.each do |zone| %>
-	<h5> <%= zone.name %>  </h5> 
-<% end %> 
+<div class="container">
+	
+	<h3><%= @martial_art.name %><%=link_to("Where you can training",gims_path)%></h3> 
+	<% @martial_art.zones.each do |zone| %>
+		<h5> <%= zone.name %>  </h5> 
+	<% end %> 
+
+</div>

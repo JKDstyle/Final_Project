@@ -12,6 +12,7 @@ class GimsController < ApplicationController
 
 	def show
 		@gim = Gim.find params[:id]
+		@pictures = @gim.url.split('**')
 		
 	end
 

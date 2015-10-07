@@ -19,7 +19,10 @@ function geolocation(){
 // 	console.log(position.coords.latitude)
 // 	console.log(position.coords.longitude)
 // }
-		
+// // <div class="row">
+// // 		<iframe src=https://api.mapbox.com/v4/mapbox.streets/zoompan.html?access_token=pk.eyJ1Ijoiamtkc3R5bGUiLCJhIjoiY2llbXN0aWdsMDAyZXRqbTV5bnUyd3l2dSJ9.I560ydyKGSSMgF3vu3SBug#12/38/-77
+// 	</div>
+	
 function onError() {
 	console.log(error)
 }
@@ -45,6 +48,8 @@ function onError() {
 			var width = '640'
 			var height = '640';
 			var url ='https://api.mapbox.com/v4/' + map_id + '/' + gim_marker + ',' + user_marker + '/' + lon + ',' + lat + ',' + zoom + '/' + width + 'x' + height + '.' + format + '?access_token=' + access_token;
+			// var url = 'https://api.mapbox.com/v4/'+ map_id + '/zoompan.html?access_token='+access_token +'#' + lat + lon;
+// 	
 			console.log(url)
 			$('#map').html('<img src=' + url + '>');
 			saveLocation(position);

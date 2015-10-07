@@ -8,9 +8,7 @@ class MartialArtsController < ApplicationController
 	end
 
 	def show
-		@martial_art = MartialArt.find params[:id]
-		
-		
+		@martial_art = MartialArt.find params[:id];
 	end
 
 	

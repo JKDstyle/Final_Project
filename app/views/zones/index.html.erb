@@ -1,5 +1,7 @@
-<ul> 
-  <% @zones.each do |zone| %> 
-    <h3><%= zone.name %><%=link_to "Show more", zone_path(zone.id)%></h3> 
-  <% end %> 
-</ul> 
+<div class="container">	
+	<ul> 
+	  <% @zones.each do |zone| %> 
+	    <h3><%= zone.name %><%=link_to "Show more", zone_path(zone.id)%></h3> 
+	  <% end %> 
+	</ul> 
+</div>
