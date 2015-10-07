@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151005105405) do
+ActiveRecord::Schema.define(version: 20151007085629) do
 
   create_table "gim_martial_arts", force: :cascade do |t|
     t.datetime "created_at",     null: false
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20151005105405) do
     t.string   "longitude"
     t.string   "lattitude"
     t.string   "url"
+    t.string   "web_site"
   end
 
   create_table "martial_art_zones", force: :cascade do |t|

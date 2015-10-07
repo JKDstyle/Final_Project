@@ -41,8 +41,8 @@ function onError() {
 			var lon = $("p.lat").text();
 			var gims_location = lon+','+lat
 			var users_location = position.coords.longitude+','+position.coords.latitude
-			var gim_marker = 'pin-l-park+482(' + gims_location + ')';
-			var user_marker = 'pin-l-star+482('+ users_location +')';
+			var gim_marker = 'pin-l-pitch+482(' + gims_location + ')';
+			var user_marker = 'pin-l-marker+482('+ users_location +')';
 			var zoom = '14'
 			var format = 'jpg90'
 			var width = '640'
