@@ -1,11 +1,25 @@
 
 <div class='container'>
+		  <% @martial_arts.each do |art| %> 
+			<!-- <table class='table'>
+				<tr>-->				
+				<div class='row'>
+			 		<div class='col-md-3'>			
+					  <h3><%= art.name %></h3>      
+					</div>	
+					<div class='col-md-3'>			
+					  <%= image_tag(art.image, width: '200px') %>	      
+					</div>	
+
+					<div class='col-md-3'>			
+					   <i><p><%= art.description %></p></i>	    
+					</div>	
+					<div class='col-md-3'>					  
+				     <%=link_to "Zones/Schools related", martial_art_path(art.id)%>
+					</div>	
+				</div>
+				<!-- </tr>				
+			</table>  --> 
+		<% end %> 		
 	
-	<ul> 
-	  <% @martial_arts.each do |art| %> 
-	    <h3><%= art.name %></h3>      <%=link_to "See the schools and the zones", martial_art_path(art.id)%> 
-	    <li><%= art.description %></li> 
-	    
-	  <% end %> 
-	</ul> 
 </div>

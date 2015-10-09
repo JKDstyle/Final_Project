@@ -27,6 +27,14 @@ body {
 html {
 	height: 100%;
 }
+/*.judo-background-image{
+	background: url(../photos/judo.jpg) no-repeat center center fixed; 
+	 height: 100%;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+     background-size: cover;
+}*/
 .text{
 	
 	border-radius: 25px;
@@ -74,17 +82,17 @@ div.nav {
 
 
 
-.background-image{
+/*.background-image{
 	 background: url(../photos/background-jkd.jpg) no-repeat center center fixed; 
 	 height: 100%;
-  /*-webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
 }
 	
 
-
+*/
 
 
 .col-lg-6{
@@ -128,4 +136,8 @@ div.nav {
 }
 .background-button{
     margin-top: 50px;	 
+}
+
+div#map {
+	display: none;
 }

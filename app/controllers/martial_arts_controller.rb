@@ -4,7 +4,8 @@ class MartialArtsController < ApplicationController
 	end
 
 	def index
-		@martial_arts= MartialArt.order(created_at: :desc)
+		@martial_arts= MartialArt.order(name: :asc)
+
 	end
 
 	def show
